@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.multipliers.ui.ThirtifiveFragment"
+    android:background="#000000" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/controller"
+                android:layout_centerHorizontal="true"
+                android:layout_width="420dp"
+                android:layout_height="120dp"
+                android:src="@drawable/controller" />
+
+            <EditText
+                android:id="@+id/answerfield"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/edit_rounded"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/layouthard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="137dp"
+                android:src="@drawable/sixtininelayouta" />
+
+            <TextView
+                android:id="@+id/hard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="680dp"
+                android:layout_centerHorizontal="true"
+                android:text="HARD"
+                android:textColor="#000000"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

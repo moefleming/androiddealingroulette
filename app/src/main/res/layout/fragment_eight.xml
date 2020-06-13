@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.multipliers.ui.ThirtifiveFragment"
+    android:background="#000000">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/controller"
+                android:layout_centerHorizontal="true"
+                android:layout_width="420dp"
+                android:layout_height="120dp"
+                android:src="@drawable/controller" />
+
+            <ImageButton
+                android:id="@+id/inorderbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/controller"
+                android:layout_alignBottom="@id/controller"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="106dp"
+                android:layout_marginBottom="37dp"
+                android:layout_marginRight="106dp"
+                android:foregroundGravity="bottom"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:src="@drawable/buttonpressed" />
+
+            <ImageButton
+                android:id="@+id/randombutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/controller"
+                android:layout_alignRight="@id/controller"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="37dp"
+                android:layout_marginBottom="37dp"
+                android:layout_marginRight="37dp"
+                android:foregroundGravity="bottom"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:src="@drawable/buttonnotpressed" />
+
+            <TextView
+                android:id="@+id/textrandom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@id/controller"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="34dp"
+                android:layout_marginRight="32dp"
+                android:text="RANDOM"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/textinorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@id/controller"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="103dp"
+                android:layout_marginRight="124dp"
+                android:text="IN ORDER"
+                android:textColor="#FFFFFF"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/straightup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/controller"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="38dp"
+                android:text="1 STRAIGHT UP ="
+                android:textColor="#FFFFFF"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/answerfield"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:background="@drawable/edit_rounded"
+                android:inputType="number" />
+
+            <ImageView
+                android:id="@+id/layoutnormal"
+                android:layout_width="330dp"
+                android:layout_height="400dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="130dp"
+                android:src="@drawable/layout" />
+
+            <ImageView
+                android:id="@+id/layouteighttoone8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/showhintsbutton8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/eighttoonemultipliers" />
+
+            <ImageView
+                android:id="@+id/chipimageview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/layoutnormal"
+                android:layout_alignLeft="@id/layoutnormal"
+                android:layout_marginTop="264dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="225dp"
+                android:src="@drawable/onechip" />
+
+            <TextView
+                android:id="@+id/hidehints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutnormal"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="-15dp"
+                android:layout_alignLeft="@id/layoutnormal"
+                android:text="HIDE HINTS"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/showhints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutnormal"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="-15dp"
+                android:layout_alignRight="@id/layoutnormal"
+                android:text="SHOW HINTS"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/inputpayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layoutnormal"
+                android:layout_centerHorizontal="true"
+                android:text="INPUT PAYOUT ABOVE"
+                android:layout_marginTop="8dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp"/>
+
+            <ImageButton
+                android:id="@+id/hidehintsbutton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/hidehints"
+                android:layout_alignLeft="@id/layoutnormal"
+                android:layout_marginLeft="-5dp"
+                android:layout_marginTop="26dp"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:foregroundGravity="bottom"
+                android:src="@drawable/buttonpressed" />
+
+            <ImageButton
+                android:id="@+id/showhintsbutton8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/showhints"
+                android:layout_alignRight="@id/layoutnormal"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="-5dp"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:foregroundGravity="bottom"
+                android:src="@drawable/buttonnotpressed" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

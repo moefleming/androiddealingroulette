@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.DealRoulette.ui.home.HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
+            app:destination="@id/nav_home_second" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_home_second"
+        android:name="com.DealRoulette.ui.home.HomeSecondFragment"
+        tools:layout="@layout/fragment_home_second">
+        <action
+            android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
+            app:destination="@id/nav_home" />
+
+        <argument
+            android:name="myArg"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_multipliers"
+        android:name="com.DealRoulette.ui.multipliers.MultipliersFragment"
+        tools:layout="@layout/fragment_multipliers" />
+
+    <fragment
+        android:id="@+id/nav_picturebets"
+        android:name="com.DealRoulette.ui.picturebets.PicturebetsFragment"
+        tools:layout="@layout/fragment_picturebets" />
+    <fragment
+        android:id="@+id/nav_easy"
+        android:name="com.DealRoulette.ui.easy.EasyFragment"
+        tools:layout="@layout/fragment_easy" />
+    <fragment
+        android:id="@+id/nav_medium"
+        android:name="com.DealRoulette.ui.medium.MediumFragment"
+        tools:layout="@layout/fragment_medium" />
+    <fragment
+        android:id="@+id/nav_hard"
+        android:name="com.DealRoulette.ui.hard.HardFragment"
+        tools:layout="@layout/fragment_hard" />
+    <fragment
+        android:id="@+id/nav_professional"
+        android:name="com.DealRoulette.ui.professional.ProfessionalFragment"
+        tools:layout="@layout/fragment_professional" />
+
+</navigation>

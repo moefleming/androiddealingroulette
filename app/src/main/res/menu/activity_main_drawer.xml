@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_multipliers"
+            android:title="@string/menu_multipliers" />
+        <item
+            android:id="@+id/nav_picturebets"
+            android:title="@string/menu_picturebets" />
+        <item
+            android:id="@+id/nav_easy"
+            android:title="@string/menu_easy" />
+        <item
+            android:id="@+id/nav_medium"
+            android:title="@string/menu_medium" />
+        <item
+            android:id="@+id/nav_hard"
+            android:title="@string/menu_hard" />
+        <item
+            android:id="@+id/nav_professional"
+            android:title="@string/menu_professional" />
+    </group>
+</menu>
